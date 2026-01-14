@@ -22,17 +22,33 @@ def Licz(): #zad 3
 
 
 def Tabliczka(): #zad 4
-	for z in range(1, 11):
+	
 		for x in range(1, 11):
 			wynik = z * x
-		print(f'{z} * {x} = {wynik }')
+		print(f'{z} * {x} = {wynik}')
 
 
 def palidro(): #zad 5
 	print(nic)
-	
 
+def CelnaFah():
+	c = int(input('Wprowadź stopień Celciusza: '))
+	f = c * 9/5 + 32
+	print(f'Po obliczeniach wychodzi = {f}')
 
+def FahnaCel():
+	f = int(input('Wprowadź stopień Farenheita'))
+	c = c * 9/5 + 32
+	print(f'Po obliczeniach wychodzi = {c}')
+
+def Ocena():
+		pro = int(input('Podaj liczbe punktów: '))
+    m = int(input('Podaj maksymalną ilość punktów: '))
+    
+    procenty = p / m * 100  
+    
+    if p >= 0:
+        print(procenty, "%")
 
 print('> COS <')
 print()
@@ -40,19 +56,36 @@ print('1.Sprawdź czy liczba jest parzysta')
 print('2.Czy jesteś dorosły czy nastolatkiem od zależności od wieku')
 print('3.Liczneie powyżej 10')
 print('4.Tabliczka mnożenia dla liczb od 1 do 10')
+print('5.')
+print('6.Celciusz na Fahrenheit')
+print('7.Fahrenheit na Celciusz')
+print('8.Ile ci wychodzi procent z punktów ze sprawdzianu')
 xd = int(input('Wybierz opcie: '))
 
 if xd == 1:
 	print(Parzysta())
 
-if xd == 2:
+elif xd == 2:
 	print(Wiek())
 
-if xd == 3:
+elif xd == 3:
 	print(Licz())
 
-if xd == 4:
+elif xd == 4:
 	print(Tabliczka())
 
-if xd == 5:
+elif xd == 5:
 	print(palidro())
+
+elif xd == 6:
+	print(CelnaFah())
+
+elif xd == 7:
+	print(FahnaCel())
+
+elif xd == 8:
+	print(Ocena())
+
+
+else:
+	print('NIE MA TAKIEJ OPCJI')
