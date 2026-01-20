@@ -1,3 +1,4 @@
+
 def Parzysta(): #Zad 1
 	p = int(input('Wprowadź liczbe: '))
 	if p in range(2, 99999999999999, 2):
@@ -29,7 +30,12 @@ def Tabliczka(): #zad 4
 
 
 def palidro(): #zad 5
-	print(nic)
+    slowo = input("Podaj słowo: ").lower()
+    
+    if slowo == slowo[::-1]:
+        print("To jest palindrom")
+    else:
+        print("To nie jest palindrom")
 
 def CelnaFah():
 	c = int(input('Wprowadź stopień Celciusza: '))
@@ -37,18 +43,17 @@ def CelnaFah():
 	print(f'Po obliczeniach wychodzi = {f}')
 
 def FahnaCel():
-	f = int(input('Wprowadź stopień Farenheita'))
-	c = c * 9/5 + 32
+	f = int(input('Wprowadź stopień Farenheita: '))
+	c = f * 9/5 + 32
 	print(f'Po obliczeniach wychodzi = {c}')
 
 def Ocena():
-		pro = int(input('Podaj liczbe punktów: '))
     m = int(input('Podaj maksymalną ilość punktów: '))
+    pro = int(input('Podaj liczbe punktów: '))
+        
+    procenty = pro / m * 100  
     
-    procenty = p / m * 100  
-    
-    if p >= 0:
-        print(procenty, "%")
+    print(f"{procenty}", "%")
 
 print('> COS <')
 print()
@@ -56,7 +61,7 @@ print('1.Sprawdź czy liczba jest parzysta')
 print('2.Czy jesteś dorosły czy nastolatkiem od zależności od wieku')
 print('3.Liczneie powyżej 10')
 print('4.Tabliczka mnożenia dla liczb od 1 do 10')
-print('5.')
+print('5.Sprawdz czy słowo jest palindromem')
 print('6.Celciusz na Fahrenheit')
 print('7.Fahrenheit na Celciusz')
 print('8.Ile ci wychodzi procent z punktów ze sprawdzianu')
@@ -85,7 +90,7 @@ elif xd == 7:
 
 elif xd == 8:
 	print(Ocena())
-
+	
 
 else:
 	print('NIE MA TAKIEJ OPCJI')
