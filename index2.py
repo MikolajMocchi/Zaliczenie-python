@@ -37,17 +37,17 @@ def palidro(): #zad 5
     else:
         print("To nie jest palindrom")
 
-def CelnaFah():
+def CelnaFah(): # zad 6
 	c = int(input('Wprowadź stopień Celciusza: '))
 	f = c * 9/5 + 32
 	print(f'Po obliczeniach wychodzi = {f}')
 
-def FahnaCel():
+def FahnaCel(): # zad 6
 	f = int(input('Wprowadź stopień Farenheita: '))
 	c = f * 9/5 + 32
 	print(f'Po obliczeniach wychodzi = {c}')
 
-def Ocena():
+def Ocena(): #zad 7
     m = int(input('Podaj maksymalną ilość punktów: '))
     pro = int(input('Podaj liczbe punktów: '))
         
@@ -55,7 +55,7 @@ def Ocena():
     
     print(f"{procenty}", "%")
     
-def BMI():
+def BMI(): #zad 8
     waga = float(input("Podaj wagę w kg: "))
     wzrost = float(input("Podaj wzrost w m: "))
     
@@ -70,7 +70,7 @@ def BMI():
     else:
         print("Masz nadwagę")
         
-def Trojkat():
+def Trojkat(): #zad 9
     a = float(input("Podaj długość pierwszego boku: "))
     b = float(input("Podaj długość drugiego boku: "))
     c = float(input("Podaj długość trzeciego boku: "))
@@ -83,7 +83,7 @@ def Trojkat():
     else:
         print("Długości boków muszą być większe od 0")
         
-def najliczba():
+def najliczba(): #zad 10
     a = float(input("Podaj pierwszą liczbę: "))
     b = float(input("Podaj drugą liczbę: "))
     c = float(input("Podaj trzecią liczbę: "))
@@ -145,3 +145,4 @@ elif xd == 11:
 
 else:
 	print('NIE MA TAKIEJ OPCJI')
+
